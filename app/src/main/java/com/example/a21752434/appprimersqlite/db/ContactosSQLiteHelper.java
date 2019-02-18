@@ -4,6 +4,9 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+/**
+ * Se encarga de crear la tabla
+ */
 public class ContactosSQLiteHelper extends SQLiteOpenHelper {
 
     static final String DATABASE_NAME = "ContactosDB";

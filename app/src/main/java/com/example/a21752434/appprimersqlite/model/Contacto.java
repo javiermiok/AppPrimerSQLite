@@ -19,6 +19,11 @@ public class Contacto implements Serializable {
     }
 
     /*********************                     GETTERS                     ************************/
+
+    public int getId() {
+        return id;
+    }
+
     public String getName() {
         return name;
     }

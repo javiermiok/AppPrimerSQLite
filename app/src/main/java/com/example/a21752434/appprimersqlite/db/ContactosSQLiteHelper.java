@@ -3,6 +3,7 @@ package com.example.a21752434.appprimersqlite.db;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.support.annotation.Nullable;
 
 /**
  * Se encarga de crear la tabla
@@ -19,7 +20,7 @@ public class ContactosSQLiteHelper extends SQLiteOpenHelper {
                     ContactosContract.ContactoEntry.COLUMN_MAIL+" TEXT NOT NULL);";
 
 
-    public ContactosSQLiteHelper(@androidx.annotation.Nullable Context context) {
+    public ContactosSQLiteHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 

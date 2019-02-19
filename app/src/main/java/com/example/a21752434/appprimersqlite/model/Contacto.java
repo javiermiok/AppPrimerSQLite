@@ -13,6 +13,13 @@ public class Contacto implements Serializable {
         this.name = name;
         this.email = email;
     }
+
+    public Contacto(int id, String name, String email) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+    }
+
     /*********************                     SETTERS                     ************************/
     public void setId(int id) {
         this.id = id;

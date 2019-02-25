@@ -31,23 +31,24 @@ public class AltaActivity extends AppCompatActivity {
         String email = etEmail.getText().toString().trim();
 
         if(nombre.isEmpty() || email.isEmpty()) {
-            //TODO
             Toast.makeText(this, "Los campos no pueden estar vacios", Toast.LENGTH_LONG).show();
         } else {
             Contacto c = new Contacto(nombre, email);
             long id = cds.insertarContacto(c);
 
             if(id != -1) {
-                //TODO
                 Toast.makeText(this, "Se ha insertado el nuevo contacto", Toast.LENGTH_LONG).show();
+                c.setId((int) id);
+
+                etNombre.setText("");
+                etEmail.setText("");
             } else {
-                //TODO
                 Toast.makeText(this, "No se ha insertado el nuevo contacto", Toast.LENGTH_LONG).show();
             }
         }
     }
 
     public void cancelar(View v) {
-
+        finish();
     }
 }

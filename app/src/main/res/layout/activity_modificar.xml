@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlModif"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding"
+    tools:context=".ModificarActivity">
+
+    <EditText
+        android:id="@+id/etId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="78dp"
+        android:ems="10"
+        android:hint="@string/et_id_hint"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnBuscarMod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etId"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="-1dp"
+        android:onClick="buscar"
+        android:text="@string/btn_buscar_mod" />
+
+    <EditText
+        android:id="@+id/etNombreMod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="185dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/etNombreAlta"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etEmailMod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="266dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/et_email_alta_hint"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/btnGuardarMod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="162dp"
+        android:enabled="false"
+        android:onClick="modificarContacto"
+        android:text="@string/btn_guardar_alta" />
+
+    <Button
+        android:id="@+id/btnCancelarMod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnGuardarMod"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="112dp"
+        android:onClick="cancelarMod"
+        android:text="@string/btn_cancelar_alta" />
+</RelativeLayout>

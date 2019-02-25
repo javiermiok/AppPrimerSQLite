@@ -17,7 +17,8 @@
         android:layout_marginTop="48dp"
         android:ems="10"
         android:hint="@string/etNombreAlta"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:layout_alignParentLeft="true" />
 
     <EditText
         android:id="@+id/etEmailAlta"
@@ -43,7 +44,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="194dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="205dp"
         android:onClick="cancelar"
         android:text="@string/btn_cancelar_alta" />
 </RelativeLayout>

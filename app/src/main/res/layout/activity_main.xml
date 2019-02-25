@@ -16,6 +16,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="49dp"
+        android:onClick="registrar"
         android:text="@string/btn_alta" />
 
     <Button
@@ -25,6 +26,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="147dp"
+        android:onClick="consultar"
         android:text="@string/btn_consulta" />
 
     <Button
@@ -34,6 +36,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="253dp"
+        android:onClick="modificar"
         android:text="@string/btn_modificar" />
 
     <Button
@@ -43,5 +46,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="163dp"
+        android:onClick="borrar"
         android:text="@string/btn_borrar" />
 </RelativeLayout>

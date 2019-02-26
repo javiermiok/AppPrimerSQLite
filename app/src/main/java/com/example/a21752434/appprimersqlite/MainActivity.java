@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void borrar (View v) {
-        Intent i = new Intent(this, AltaActivity.class);
+        Intent i = new Intent(this, BorrarActivity.class);
         startActivity(i);
     }
 

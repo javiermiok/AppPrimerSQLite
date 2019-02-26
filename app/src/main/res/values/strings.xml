@@ -11,4 +11,5 @@
     <string name="btn_volver">Volver</string>
     <string name="et_id_hint">Introduce un ID</string>
     <string name="btn_buscar_mod">Buscar</string>
+    <string name="btn_guardar_borrar">Borrar</string>
 </resources>

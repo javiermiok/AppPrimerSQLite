@@ -2,14 +2,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/rlModif"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/padding"
-    tools:context=".ModificarActivity">
+    tools:context=".BorrarActivity">
 
     <EditText
-        android:id="@+id/etId"
+        android:id="@+id/etIdBorrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -23,20 +22,20 @@
         android:inputType="number" />
 
     <Button
-        android:id="@+id/btnBuscarMod"
+        android:id="@+id/btnBuscarBorrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/etId"
+        android:layout_alignBottom="@+id/etIdBorrar"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
         android:layout_marginBottom="-1dp"
-        android:onClick="buscar"
+        android:onClick="buscarBorrar"
         android:text="@string/btn_buscar_mod" />
 
     <EditText
-        android:id="@+id/etNombreMod"
+        android:id="@+id/etNombreBorrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -47,7 +46,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/etEmailMod"
+        android:id="@+id/etEmailBorrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -59,24 +58,25 @@
         android:inputType="textEmailAddress" />
 
     <Button
-        android:id="@+id/btnGuardarMod"
+        android:id="@+id/btnGuardarBorrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="162dp"
         android:enabled="false"
-        android:onClick="modificarContacto"
-        android:text="@string/btn_guardar_alta" />
+        android:onClick="borrar"
+        android:text="@string/btn_guardar_borrar" />
 
     <Button
-        android:id="@+id/btnCancelarMod"
+        android:id="@+id/btnCancelarBorrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/btnGuardarMod"
+        android:layout_alignStart="@+id/btnGuardarBorrar"
+        android:layout_alignLeft="@+id/btnGuardarBorrar"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="112dp"
         android:onClick="cancelarMod"
-        android:text="@string/btn_cancelar_alta"
-        android:layout_alignLeft="@+id/btnGuardarMod" />
+        android:text="@string/btn_cancelar_alta" />
+
 </RelativeLayout>
